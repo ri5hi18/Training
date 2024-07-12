@@ -1,0 +1,36 @@
+#first{
+    color:maroon;
+    /* background-color:palegreen;  */
+    border: black solid 3px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-left: 180px;
+}   
+
+.second{
+    color:red;
+    /* background-color:palegreen;  */
+    border:dodgerblue dashed 3px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-left: 160px;
+}   
+
+.third
+{
+    color: darkblue;
+    border: crimson solid 2px;
+    background-color: blanchedalmond;
+
+}
+.box
+{
+    border: rgba(130, 194, 212, 0.836) solid 3px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:ivory;
+}

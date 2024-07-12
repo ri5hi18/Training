@@ -1,0 +1,12 @@
+  git config --global user.email "hrishi6576@gmail.com"
+  git config --global user.name "hrishiraj"
+
+
+
+git add .
+git commit -m "message"
+git reflog
+
+//gets intial commit, copy the commit from there and place in the next command
+
+git reset --hard *commit value*.

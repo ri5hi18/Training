@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .box
+        {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="box" id="box1">
+
+    </div>
+    <script>
+        let box =document.getElementById('box1');
+
+
+        box.addEventListener('mouseover',()=>{
+            
+            let randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
+
+            box.style.background=randomColor;
+        });
+
+        box.addEventListener('mouseout',()=>{
+            box.style.background="green";
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+INSERT INTO Employees values(1,"John Doe",1985-07-15,2020-01-10,550000.00,1);
+
+create table Employees (employee_id int PRIMARY KEY, name varchar(20) NOT NULL,birth_date DATE,hire_date DATE,salary DECIMAL(10,2), department_id int);
+
+
+Inserting 
+insert into Employees Values (2,'Jane Smith','1990-11-23','2021-03-15',70000.00,1),
+			    (3,'Micheal Johnson','1988-04-30','2019-02-20',60000.00,1),
+                            (4,'Emily Davis','1995-09-12','2022-05-05',65000.00,2),
+                            (5,'William Brown','1993-03-28','2023-08-10',58000.00,1);
+
+Delete from employees where emop_id=6;
+drop table Employess;
+
+
+updating table 
+update Employees set salary=60000 where employee_id=1;
+
+selecting maximum from entries
+select * from employees where salary=(select min(salary)from employees)
+
+SELECT department_id, avg(salary) AS AVERAGE_SALARY FROM Employees 
+group by department_id 
+Having AVERAGE_SALARY >(SELECT(avg(salary)) FROM EMPLOYEES);
+
+
+
+SELECT * FROM Employees order by salary DESC;
+
+
