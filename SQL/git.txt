@@ -10,3 +10,11 @@ git reflog
 //gets intial commit, copy the commit from there and place in the next command
 
 git reset --hard *commit value*.
+
+steps to correct the git 
+
+git remote add origin **link of repo**
+git branch -M main
+git push -u origin main 
+
+git push -u origin main -f
